@@ -1,0 +1,121 @@
+.main-container {
+  min-height: 100vh;
+}
+.cover-photo-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  color: #ffffff;
+}
+.cover-photo-container > * {
+  margin-block: 5px;
+}
+.cover-photo-container h1 {
+  font-size: clamp(1.5em, 3.5vw, 2.7rem);
+}
+.cover-photo-container p {
+  font-size: clamp(1.1em, 2vw, 2rem);
+}
+
+.main-container,
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-container {
+  flex-grow: 1;
+  padding: clamp(1em, 2vw, 2em);
+  background-color: #152850;
+  color: #ffffff;
+}
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playlist-header h2 {
+  margin-block: 10px;
+}
+.search-container {
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 30ch);
+}
+.search-container input {
+  outline: none;
+  border: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  color: #ffffff;
+  flex-grow: 1;
+  background-color: transparent;
+}
+.search-icon {
+  padding-right: 0.5em;
+  display: grid;
+  place-items: center;
+}
+.search-icon > * {
+  width: 18px;
+  height: 18px;
+}
+
+.no-songs-container {
+  flex-grow: 1;
+  display: grid;
+  place-items: center;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+/* Song Item Styles  */
+.song-item {
+  display: grid;
+  grid-template-columns: min(160px, 30%) 1fr;
+  gap: 1em;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-right: 1em;
+}
+.track-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.track-header p:first-child {
+  font-weight: 500;
+  font-size: clamp(1rem, 1.8vw, 1.7rem);
+}
+.track-header p:last-child {
+  color: #3b82f6;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+
+.track-footer {
+  width: min(100%, 12ch);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+.track-footer p {
+  margin-block: 0;
+}
+.track-footer button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
